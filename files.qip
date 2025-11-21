@@ -5,12 +5,9 @@ set_global_assignment -name SYSTEMVERILOG_FILE CylonX.sv
 set_global_assignment -name QIP_FILE rtl/pll.qip
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/gamepad_input.sv
 
-# --- Console Subsystems (Uncomment as you build them) ---
-# set_global_assignment -name SYSTEMVERILOG_FILE rtl/apex32_cpu.sv
-# set_global_assignment -name SYSTEMVERILOG_FILE rtl/vdp_gx.sv
-# set_global_assignment -name SYSTEMVERILOG_FILE rtl/apu_sonic16.sv
+# --- Console Subsystems ---
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/vdp_gx.sv
 
-# --- Deprecated Demo Files (Plasma Effect) ---
-# set_global_assignment -name VERILOG_FILE rtl/mycore.v
-# set_global_assignment -name VERILOG_FILE rtl/lfsr.v
-# set_global_assignment -name SYSTEMVERILOG_FILE rtl/cos.sv
+# --- Future Subsystems ---
+# set_global_assignment -name SYSTEMVERILOG_FILE rtl/apex32_cpu.sv
+# set_global_assignment -name SYSTEMVERILOG_FILE rtl/apu_sonic16.sv
